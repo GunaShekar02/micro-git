@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --primary: #7f5af0;
+  --primary-light: #bfacf8;
+  --primary-dark: #5f43b4;
+  --background: #010101;
+  --background-secondary: #16161a;
+  --secondary: #2cb67d;
+  --metric-primary: 16px;
+  --metric-secondary: 32px;
+}
