@@ -1,0 +1,8 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background);
+  display: flex;
+  padding: var(--metric-primary);
+  gap: 16px;
+}
