@@ -3,4 +3,48 @@
   background-color: var(--background-secondary);
   border-radius: var(--metric-tertiary);
   padding: var(--metric-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome {
+  font-family: 'Poppins';
+  font-size: var(--metric-secondary);
+  color: var(--primary-light);
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 2px solid var(--primary);
+  border-radius: var(--metric-tertiary);
+}
+
+.filename {
+  height: fit-content;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: var(--metric-tertiary) var(--metric-primary);
+  border-top-left-radius: var(--metric-tertiary);
+  background-color: var(--primary);
+  outline: none;
+  border: none;
+  font-family: 'Poppins';
+  font-size: var(--metric-secondary);
+  color: var(--primary-light);
+}
+
+.textarea {
+  align-self: stretch;
+  flex: 1 1 auto;
+  width: 100%;
+  padding: var(--metric-secondary);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Poppins';
+  font-size: var(--metric-secondary);
+  color: var(--primary-light);
 }
