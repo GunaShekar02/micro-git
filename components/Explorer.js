@@ -52,7 +52,7 @@ const Explorer = forwardRef(({ updateCurrentNode }, ref) => {
   return (
     <div className={styles.container}>
       <Button title="COMMIT" onClick={handleCommit} />
-      {/* {displayNodes(node.root)} */}
+      {displayNodes(node.root)}
     </div>
   );
 });

@@ -1,0 +1,35 @@
+.entity {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins';
+  font-size: var(--metric-secondary);
+  color: var(--primary-light);
+}
+
+.modified {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.icon {
+  margin-left: var(--metric-tertiary);
+  height: var(--metric-secondary);
+  width: var(--metric-secondary);
+  cursor: pointer;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  outline: none;
+  border-radius: var(--metric-tertiary);
+  font-family: 'Poppins';
+  font-size: var(--metric-secondary);
+  color: var(--primary-light);
+  width: 50%;
+}
+
+.tick {
+  margin-left: var(--metric-tertiary);
+  cursor: pointer;
+}

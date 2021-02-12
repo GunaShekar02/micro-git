@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Node from "../merkle-tree/node";
+
 import styles from "../styles/DisplayNode.module.css";
 
 const DisplayNode = ({ node, update, updateCurrentNode }) => {
@@ -30,16 +32,13 @@ const DisplayNode = ({ node, update, updateCurrentNode }) => {
   return (
     <>
       <span
-        className={styles.entity}
+        className={`${styles.entity} ${node.modified ? styles.modified : null}`}
         style={{
-          marginLeft: 20 * node.level,
           cursor: node.type === "file" ? "pointer" : "alias",
-          color: !node.modified ? "black" : "orange",
-          fontWeight: !node.modified ? "normal" : "bold",
         }}
         onClick={handleFileClick}
       >
-        {"-".repeat(node.level)}
+        {"---".repeat(node.level)}
         {node.name}
         {node.type === "directory" ? (
           <>

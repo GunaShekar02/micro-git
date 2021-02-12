@@ -7,10 +7,11 @@
   outline: none;
   border: none;
   font-family: 'Poppins';
-  font-size: var(--metric-primary);
+  font-size: var(--metric-secondary);
   color: var(--primary-light);
-  margin-left: auto;
+  align-self: flex-end;
   cursor: pointer;
+  margin-bottom: 1vw;
 }
 
 .button:hover {

@@ -4,5 +4,5 @@
   border-radius: var(--metric-tertiary);
   padding: var(--metric-secondary);
   display: flex;
-  /* justify-content: flex-end; */
+  flex-direction: column;
 }
