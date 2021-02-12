@@ -3,6 +3,6 @@
   width: 100vw;
   background-color: var(--background);
   display: flex;
-  padding: var(--metric-primary);
-  gap: 16px;
+  padding: var(--metric-secondary);
+  gap: var(--metric-secondary);
 }

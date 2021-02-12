@@ -1,5 +1,6 @@
 .container {
   flex: 2;
   background-color: var(--background-secondary);
-  border-radius: var(--metric-primary);
+  border-radius: var(--metric-tertiary);
+  padding: var(--metric-secondary);
 }
