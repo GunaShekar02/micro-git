@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRef, useState } from "react";
 
 import Explorer from "../components/Explorer";
@@ -14,10 +15,15 @@ const Index = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <Explorer updateCurrentNode={setNode} ref={explorerRef} />
-      <Editor node={node} updateModification={updateModification} />
-    </div>
+    <>
+      <Head>
+        <title>Micro Git</title>
+      </Head>
+      <div className={styles.container}>
+        <Explorer updateCurrentNode={setNode} ref={explorerRef} />
+        <Editor node={node} updateModification={updateModification} />
+      </div>
+    </>
   );
 };
 

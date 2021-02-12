@@ -34,11 +34,12 @@ const DisplayNode = ({ node, update, updateCurrentNode }) => {
       <span
         className={`${styles.entity} ${node.modified ? styles.modified : null}`}
         style={{
+          marginLeft: node.level * 40,
           cursor: node.type === "file" ? "pointer" : "alias",
         }}
         onClick={handleFileClick}
       >
-        {"---".repeat(node.level)}
+        {"---"}
         {node.name}
         {node.type === "directory" ? (
           <>
